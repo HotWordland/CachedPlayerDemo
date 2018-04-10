@@ -12,6 +12,8 @@
 		B72939A8207B3FC60017C450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72939A6207B3FC60017C450 /* Main.storyboard */; };
 		B72939AA207B3FC60017C450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72939A9207B3FC60017C450 /* Assets.xcassets */; };
 		B72939AD207B3FC60017C450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72939AB207B3FC60017C450 /* LaunchScreen.storyboard */; };
+		B72939B6207B3FDB0017C450 /* CachedPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72939B5207B3FDB0017C450 /* CachedPlayer.swift */; };
+		B768E58C207C8C8E0020895B /* CachedPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E58B207C8C8E0020895B /* CachedPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B72939A9207B3FC60017C450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B72939AC207B3FC60017C450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B72939AE207B3FC60017C450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B72939B5207B3FDB0017C450 /* CachedPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPlayer.swift; sourceTree = "<group>"; };
+		B768E58B207C8C8E0020895B /* CachedPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		B72939A1207B3FC60017C450 /* CachedPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B72939B4207B3FCA0017C450 /* CachedPlayer */,
 				B72939A2207B3FC60017C450 /* AppDelegate.swift */,
 				B72939A4207B3FC60017C450 /* ViewController.swift */,
 				B72939A6207B3FC60017C450 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				B72939AE207B3FC60017C450 /* Info.plist */,
 			);
 			path = CachedPlayerDemo;
+			sourceTree = "<group>";
+		};
+		B72939B4207B3FCA0017C450 /* CachedPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				B72939B5207B3FDB0017C450 /* CachedPlayer.swift */,
+				B768E58B207C8C8E0020895B /* CachedPlayerView.swift */,
+			);
+			path = CachedPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72939B6207B3FDB0017C450 /* CachedPlayer.swift in Sources */,
 				B72939A5207B3FC60017C450 /* ViewController.swift in Sources */,
 				B72939A3207B3FC60017C450 /* AppDelegate.swift in Sources */,
+				B768E58C207C8C8E0020895B /* CachedPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C62TJ4568H;
 				INFOPLIST_FILE = CachedPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danis.CachedPlayerDemo;
@@ -289,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C62TJ4568H;
 				INFOPLIST_FILE = CachedPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danis.CachedPlayerDemo;
