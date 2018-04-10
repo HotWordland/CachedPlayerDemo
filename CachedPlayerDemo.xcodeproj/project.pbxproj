@@ -14,6 +14,14 @@
 		B72939AD207B3FC60017C450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72939AB207B3FC60017C450 /* LaunchScreen.storyboard */; };
 		B72939B6207B3FDB0017C450 /* CachedPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72939B5207B3FDB0017C450 /* CachedPlayer.swift */; };
 		B768E58C207C8C8E0020895B /* CachedPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E58B207C8C8E0020895B /* CachedPlayerView.swift */; };
+		B768E58E207CA1A50020895B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E58D207CA1A50020895B /* Utils.swift */; };
+		B768E591207CA81B0020895B /* ResourceLoaderProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E590207CA81B0020895B /* ResourceLoaderProxy.swift */; };
+		B768E594207CA8E30020895B /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E593207CA8E30020895B /* DataLoader.swift */; };
+		B768E596207CA8EE0020895B /* DataLoaderPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E595207CA8EE0020895B /* DataLoaderPool.swift */; };
+		B768E598207CA8F40020895B /* ContentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E597207CA8F40020895B /* ContentInfo.swift */; };
+		B768E59B207CA9120020895B /* ResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E59A207CA9120020895B /* ResourceManager.swift */; };
+		B768E59D207CA9250020895B /* AVAssetResourceLoadingRequest+Outputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E59C207CA9250020895B /* AVAssetResourceLoadingRequest+Outputable.swift */; };
+		B768E5A0207CA9410020895B /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768E59F207CA9410020895B /* Downloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		B72939AE207B3FC60017C450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B72939B5207B3FDB0017C450 /* CachedPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPlayer.swift; sourceTree = "<group>"; };
 		B768E58B207C8C8E0020895B /* CachedPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPlayerView.swift; sourceTree = "<group>"; };
+		B768E58D207CA1A50020895B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B768E590207CA81B0020895B /* ResourceLoaderProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoaderProxy.swift; sourceTree = "<group>"; };
+		B768E593207CA8E30020895B /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		B768E595207CA8EE0020895B /* DataLoaderPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderPool.swift; sourceTree = "<group>"; };
+		B768E597207CA8F40020895B /* ContentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInfo.swift; sourceTree = "<group>"; };
+		B768E59A207CA9120020895B /* ResourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceManager.swift; sourceTree = "<group>"; };
+		B768E59C207CA9250020895B /* AVAssetResourceLoadingRequest+Outputable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAssetResourceLoadingRequest+Outputable.swift"; sourceTree = "<group>"; };
+		B768E59F207CA9410020895B /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +90,48 @@
 			children = (
 				B72939B5207B3FDB0017C450 /* CachedPlayer.swift */,
 				B768E58B207C8C8E0020895B /* CachedPlayerView.swift */,
+				B768E58F207CA8050020895B /* ResourceLoader */,
 			);
 			path = CachedPlayer;
+			sourceTree = "<group>";
+		};
+		B768E58F207CA8050020895B /* ResourceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				B768E58D207CA1A50020895B /* Utils.swift */,
+				B768E590207CA81B0020895B /* ResourceLoaderProxy.swift */,
+				B768E59E207CA9330020895B /* Downloader */,
+				B768E599207CA9020020895B /* ResourceManager */,
+				B768E592207CA8390020895B /* DataLoader */,
+			);
+			path = ResourceLoader;
+			sourceTree = "<group>";
+		};
+		B768E592207CA8390020895B /* DataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				B768E593207CA8E30020895B /* DataLoader.swift */,
+				B768E595207CA8EE0020895B /* DataLoaderPool.swift */,
+				B768E597207CA8F40020895B /* ContentInfo.swift */,
+			);
+			path = DataLoader;
+			sourceTree = "<group>";
+		};
+		B768E599207CA9020020895B /* ResourceManager */ = {
+			isa = PBXGroup;
+			children = (
+				B768E59A207CA9120020895B /* ResourceManager.swift */,
+				B768E59C207CA9250020895B /* AVAssetResourceLoadingRequest+Outputable.swift */,
+			);
+			path = ResourceManager;
+			sourceTree = "<group>";
+		};
+		B768E59E207CA9330020895B /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				B768E59F207CA9410020895B /* Downloader.swift */,
+			);
+			path = Downloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,10 +206,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B768E598207CA8F40020895B /* ContentInfo.swift in Sources */,
+				B768E58E207CA1A50020895B /* Utils.swift in Sources */,
+				B768E5A0207CA9410020895B /* Downloader.swift in Sources */,
 				B72939B6207B3FDB0017C450 /* CachedPlayer.swift in Sources */,
+				B768E596207CA8EE0020895B /* DataLoaderPool.swift in Sources */,
+				B768E594207CA8E30020895B /* DataLoader.swift in Sources */,
 				B72939A5207B3FC60017C450 /* ViewController.swift in Sources */,
 				B72939A3207B3FC60017C450 /* AppDelegate.swift in Sources */,
 				B768E58C207C8C8E0020895B /* CachedPlayerView.swift in Sources */,
+				B768E591207CA81B0020895B /* ResourceLoaderProxy.swift in Sources */,
+				B768E59D207CA9250020895B /* AVAssetResourceLoadingRequest+Outputable.swift in Sources */,
+				B768E59B207CA9120020895B /* ResourceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
